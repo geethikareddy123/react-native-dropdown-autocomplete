@@ -501,6 +501,7 @@ export default class Dropdown extends PureComponent {
               ref={this.updateScrollRef}
               data={itemData}
               style={[styles.scroll, scrollStyle]}
+              nestedScrollEnabled={true}
               renderItem={this.renderItem}
               keyExtractor={this.keyExtractor}
               scrollEnabled={visibleItemCount <= itemCount}
